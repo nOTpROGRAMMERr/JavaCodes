@@ -1,0 +1,27 @@
+package auto_boxing;
+
+public class Wrapper {
+
+	public static void main(String[] args) {
+		
+		int a=20;
+		Integer i = Integer.valueOf(a);
+		System.out.println("a without autoboxing "+ i);
+		// autoboxing
+		
+		Integer j = a;
+		System.out.println("a with autoboxing "+ j);
+		//auto unboxing
+		
+		Integer b = 50;
+		int a1 = b.intValue();
+		int a2 = b;
+		float a3 = b;
+		double a4 = b;
+		long a5 = b;
+		System.out.println(a1+"\n"+a2+"\n"+a3+"\n"+a4+"\n"+a5);
+		
+		
+	}
+
+}
