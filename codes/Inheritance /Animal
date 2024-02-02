@@ -1,0 +1,40 @@
+package classwork;
+
+class Animal{
+	String Classification;
+	void displayAnimal() {
+		System.out.println("Type Of Animal="+Classification);
+	}
+}
+class Dog extends Animal{
+	String breed ;
+	int age;
+	void displayDog() {
+		System.out.println("Breed"+breed);
+		System.out.println("Age"+age);
+	}
+}
+
+class Labro extends Dog{
+	String Name;
+	void displayLabro() {
+		System.out.println("Type Of Animal="+Classification);
+		System.out.println("Breed="+breed);
+		System.out.println("Age="+age);
+		System.out.println("Name="+Name);
+		
+	}
+	
+}
+
+public class AnimalClass {
+	public static void main(String[] args) {
+		Labro lab = new Labro();
+		lab.age=4;
+		lab.breed="lab";
+		lab.Classification="HERBIVORE";
+		lab.Name="tommy";
+		lab.displayLabro();
+	}
+
+}
