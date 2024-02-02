@@ -1,0 +1,29 @@
+package classwork;
+
+class Parent{
+	int a =20;
+	
+	void displayParent() {
+		System.out.println("Parent A="+a);
+	}
+}
+
+class Child extends Parent{
+	int b = 30;
+	
+	void displayChild() {
+		System.out.println("Parent A="+a);
+		System.out.println("child b="+b);
+	}
+}
+
+public class SingleInheritance {
+
+	public static void main(String[] args) {
+		
+		Child child = new Child();
+		child.displayChild();
+		child.displayParent();
+	}
+
+}
