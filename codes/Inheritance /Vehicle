@@ -1,0 +1,42 @@
+package classwork;
+class Veh {
+	int wheels = 4;
+	int manufacturingyear=2001;
+	
+	void displayVeh() {
+		System.out.println("manufacturingyear"+manufacturingyear);
+		System.out.println("wheels="+wheels);
+	}
+	
+	
+}
+class Car extends Veh{
+	
+	int noofdoor;
+	void displayCar() {
+		System.out.println("noofdoor"+noofdoor);
+		
+	}
+}
+
+class Sportscar extends Car{
+	boolean isConvertible=true;
+	
+	void displayCar() {
+		System.out.println("manufacturingyear"+manufacturingyear);
+		System.out.println("wheels="+wheels);
+		System.out.println("noofdoor"+noofdoor);
+		System.out.println("isConvertible"+isConvertible);
+		
+	}
+}
+
+public class Vehicle {
+	public static void main(String[] args) {
+		Sportscar car = new Sportscar();
+		car.noofdoor=4;
+		car.isConvertible=true;
+		car.manufacturingyear=2001;
+		
+	}
+}
