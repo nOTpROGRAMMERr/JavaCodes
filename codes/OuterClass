@@ -1,0 +1,23 @@
+package innerclass;
+
+public class Outerclass {
+	
+	private int outVariable = 10;
+	public int getoutVariable() {
+		return outVariable;
+	}
+	class Inner1{
+		public void displayoutVatiable() {
+			System.out.println("I am Method of Inner class");
+			System.out.println("Value of Outerclass VAriable is: "+getoutVariable());
+		}
+	}
+	public static void main(String[] args) {
+		
+		Outerclass o1 = new Outerclass();
+		System.out.println("Value of outerclass variable is:"+o1.getoutVariable());
+		Outerclass.Inner1 i1 = o1.new Inner1();
+		i1.displayoutVatiable();
+	}
+
+}
