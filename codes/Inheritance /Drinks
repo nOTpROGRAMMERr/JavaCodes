@@ -1,0 +1,50 @@
+package classwork;
+class Drink{
+	int capactity;
+	boolean soda;
+	void displayDrink(){
+		System.out.println("ML:"+capactity);
+		System.out.println("Soda:"+soda);
+		
+	}
+}
+class Sodadrink extends Drink{
+	
+	String Dname;
+	String sodaname;
+	void displaySoda() {
+		System.out.println("ML:"+capactity);
+		System.out.println("Soda:"+soda);		
+	System.out.println("Dname:"+Dname);
+	System.out.println("Name of soda:"+sodaname);
+	}	
+}
+
+class WithoutSodadrink extends Drink{
+	
+	String Dname;
+	void displaywSoda() {
+		System.out.println("ML:"+capactity);
+		System.out.println("Soda:"+soda);
+	System.out.println("Dname:"+Dname);
+	}		
+}
+
+
+public class Drinks {
+
+	public static void main(String[] args) {
+		Sodadrink sd = new Sodadrink();
+		sd.capactity=10;
+		sd.Dname="Virgin Aarya";
+		sd.soda=true;
+		sd.sodaname="Dukes";
+		sd.displaySoda();
+		WithoutSodadrink wsd = new WithoutSodadrink();
+		wsd.capactity=5;
+		wsd.soda=false;
+		wsd.Dname="Onthebeach";
+		wsd.displaywSoda();
+		
+	}
+}
